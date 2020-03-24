@@ -67,7 +67,7 @@ namespace GitDif
         }
         public static bool InputCheck(string Command, string File)
         {
-            if (Command.Contains("dif"))
+            if (Command.Contains("diff"))
             {
                 if ((File.Contains("GitRepositories_")) & (File.Substring(File.Length - 4) == ".txt")) return true; // Only returns true if text files are in format "GitRepositories_*.txt"
                 else return false;
